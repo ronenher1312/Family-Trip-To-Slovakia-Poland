@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇵🇱 טיול פולין וסלובקיה יולי 2026 🇸🇰</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0D1F4A;
+  --forest: #155724;
+  --purple: #1A0A4A;
+  --brown: #4A1A0A;
+  --gold: #C9A84C;
+  --gold-light: #F0D98A;
+  --orange: #C85A00;
+  --red: #C0392B;
+  --blue: #1565C0;
+  --green: #2E7D32;
+  --teal: #00838F;
+  --bg: #F7F4EF;
+  --card: #FFFFFF;
+  --text: #1A1A1A;
+  --muted: #666;
+  --border: #E8E0D0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  direction: rtl;
+  min-height: 100vh;
+}
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, #0D1F4A 0%, #1A0A4A 40%, #0D3B27 100%);
+  color: white;
+  padding: 60px 24px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-emoji { font-size: 56px; display: block; margin-bottom: 16px; animation: float 3s ease-in-out infinite; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+.hero h1 {
+  font-family: 'Secular One', sans-serif;
+  font-size: clamp(28px, 6vw, 52px);
+  color: var(--gold-light);
+  margin-bottom: 12px;
+  position: relative;
+}
+.hero-sub {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+.hero-dates {
+  display: inline-block;
+  background: rgba(201,168,76,0.2);
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+/* ── NAV ── */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy);
+  border-bottom: 2px solid var(--gold);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.sticky-nav::-webkit-scrollbar { display: none; }
+.nav-inner {
+  display: flex;
+  gap: 0;
+  min-width: max-content;
+  padding: 0 8px;
+}
+.nav-btn {
+  background: none; border: none;
+  color: rgba(255,255,255,0.7);
+  padding: 14px 16px;
+  font-family: 'Heebo', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+.nav-btn:hover { color: var(--gold-light); }
+.nav-btn.active { color: var(--gold-light); border-bottom-color: var(--gold); }
+
+/* ── SUMMARY CARDS ── */
+.summary-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+}
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.sum-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.sum-card .icon { font-size: 32px; display: block; margin-bottom: 8px; }
+.sum-card .label { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.sum-card .value { font-size: 18px; font-weight: 700; color: var(--navy); }
+
+/* ── ATTRACTIONS GRID ── */
+.section-title {
+  font-family: 'Secular One', sans-serif;
+  font-size: 22px;
+  color: var(--navy);
+  padding: 10px 16px;
+  background: linear-gradient(to left, var(--orange), #E8832A);
+  color: white;
+  border-radius: 10px;
+  margin: 32px 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.attr-chip {
+  background: white;
+  border: 1px solid var(--border);
+  border-right: 4px solid var(--gold);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.attr-chip .star { color: var(--gold); font-size: 16px; }
+
+/* ── DAY SECTIONS ── */
+.days-container { max-width: 960px; margin: 0 auto; padding: 0 20px 60px; }
+.day-section { margin-bottom: 48px; }
+.day-section[data-region="krakow"] .day-header { background: var(--navy); }
+.day-section[data-region="low-tat"] .day-header { background: var(--forest); }
+.day-section[data-region="high-tat"] .day-header { background: var(--purple); }
+.day-section[data-region="paradise"] .day-header { background: var(--brown); }
+
+.day-header {
+  border-radius: 14px 14px 0 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.day-header-gold-strip {
+  height: 5px;
+  background: linear-gradient(to left, var(--gold), var(--gold-light), var(--gold));
+}
+.day-header-content {
+  padding: 18px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.day-num {
+  font-family: 'Secular One', sans-serif;
+  font-size: 28px;
+  color: var(--gold-light);
+  white-space: nowrap;
+}
+.day-date {
+  font-size: 14px;
+  color: rgba(180,210,255,0.9);
+}
+.day-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  flex: 1;
+}
+
+.day-body {
+  background: white;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  overflow: hidden;
+}
+
+/* ── ACTIVITY BLOCK ── */
+.act-block { border-bottom: 1px solid #F0EBE0; }
+.act-block:last-child { border-bottom: none; }
+.act-header {
+  padding: 16px 20px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 4px solid currentColor;
+}
+.act-icon { font-size: 22px; }
+.act-title { font-weight: 700; font-size: 16px; }
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 12px;
+}
+.info-table tr { border-bottom: 1px solid #F5F0EA; }
+.info-table td { padding: 8px 16px; font-size: 14px; }
+.info-table td:first-child {
+  font-weight: 700;
+  color: white;
+  width: 110px;
+  white-space: nowrap;
+}
+.info-table td:last-child { color: #2C2C2C; }
+
+.bullets { padding: 0 20px 12px; }
+.bullets li {
+  font-size: 14px;
+  color: #333;
+  padding: 4px 0;
+  padding-right: 8px;
+  list-style: none;
+  position: relative;
+}
+.bullets li::before {
+  content: '›';
+  color: #7B8FB0;
+  font-size: 18px;
+  position: absolute;
+  right: -4px;
+  top: 2px;
+}
+
+.tip-box {
+  margin: 8px 20px 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  border-right: 4px solid;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.tip-box.tip { background: #FFFEF0; border-color: var(--gold); }
+.tip-box.warn { background: #FDF2F2; border-color: var(--red); }
+.tip-box.info { background: #EFF6FF; border-color: var(--blue); }
+.tip-box strong { font-weight: 700; }
+
+/* ── MAP BOX ── */
+.map-box {
+  background: linear-gradient(to left, #E8F5E9, #F1F8F1);
+  border: 1px solid #BBDDBB;
+  border-radius: 10px;
+  margin: 4px 16px 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.map-box-icon { font-size: 28px; }
+.map-box a {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 7px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.map-box a:hover { background: #1B5E20; }
+.map-box-title { font-weight: 700; color: var(--green); margin-bottom: 4px; font-size: 15px; }
+.map-box-desc { font-size: 13px; color: #444; }
+
+/* ── ACCOMMODATION ── */
+.accom-box {
+  background: #EEF7F1;
+  border-right: 4px solid var(--green);
+  border-radius: 10px;
+  margin: 8px 16px 16px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.accom-icon { font-size: 24px; }
+.accom-name { font-weight: 700; font-size: 15px; color: var(--forest); }
+.accom-addr { font-size: 13px; color: #555; margin-top: 2px; }
+.accom-nights { font-size: 12px; color: var(--green); font-weight: 600; margin-top: 4px; }
+
+/* ── SECTION BARS ── */
+.section-bar {
+  background: var(--navy);
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 4px solid var(--gold);
+}
+.section-bar.green { background: var(--forest); }
+.section-bar.purple { background: var(--purple); }
+.section-bar.red { background: var(--red); }
+.section-bar.orange { background: var(--orange); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+  border-top: 2px solid var(--gold);
+}
+footer span { color: var(--gold-light); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .hero { padding: 40px 16px 60px; }
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+  .attractions-grid { grid-template-columns: repeat(2, 1fr); }
+  .day-title { font-size: 16px; }
+  .info-table td:first-child { width: 90px; }
+}
+
+/* hide sections */
+.day-section { display: none; }
+.day-section.visible { display: block; }
+.summary-section { display: none; }
+.summary-section.visible { display: block; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-emoji">✈️</span>
+  <h1>🇵🇱 טיול פולין וסלובקיה 🇸🇰</h1>
+  <p class="hero-sub">תוכנית טיול משפחתי</p>
+  <span class="hero-dates">4 – 15 יולי 2026 &nbsp;|&nbsp; 12 ימים</span>
+</div>
+
+<!-- NAV -->
+<nav class="sticky-nav">
+  <div class="nav-inner">
+    <button class="nav-btn active" onclick="showSection('summary')">📋 סיכום</button>
+    <button class="nav-btn" onclick="showSection('day1')">יום 1</button>
+    <button class="nav-btn" onclick="showSection('day2')">יום 2</button>
+    <button class="nav-btn" onclick="showSection('day3')">יום 3</button>
+    <button class="nav-btn" onclick="showSection('day4')">יום 4</button>
+    <button class="nav-btn" onclick="showSection('day5')">יום 5</button>
+    <button class="nav-btn" onclick="showSection('day6')">יום 6</button>
+    <button class="nav-btn" onclick="showSection('day7')">יום 7</button>
+    <button class="nav-btn" onclick="showSection('day8')">יום 8</button>
+    <button class="nav-btn" onclick="showSection('day9')">יום 9</button>
+    <button class="nav-btn" onclick="showSection('day10')">יום 10</button>
+    <button class="nav-btn" onclick="showSection('day11')">יום 11</button>
+    <button class="nav-btn" onclick="showSection('day12')">יום 12</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     SUMMARY PAGE
+══════════════════════════════════════════════════════════ -->
+<section class="summary-section visible" id="summary">
+  <div class="summary-section">
+
+    <!-- Stats -->
+    <div class="summary-grid">
+      <div class="sum-card">
+        <span class="icon">📅</span>
+        <div class="label">תאריכים</div>
+        <div class="value">4–15 יולי 2026</div>
+      </div>
+      <div class="sum-card">
+        <span class="icon">🗓</span>
+        <div class="label">משך</div>
+        <div class="value">12 ימים</div>
+      </div>
+      <div class="sum-card">
+        <span class="icon">🚗</span>
+        <div class="label">השכרת רכב</div>
+        <div class="value">₪2,695 – ONE RENT</div>
+      </div>
+      <div class="sum-card">
+        <span class="icon">💰</span>
+        <div class="label">תקציב כולל</div>
+        <div class="value">₪14,895</div>
+      </div>
+      <div class="sum-card">
+        <span class="icon">✈️</span>
+        <div class="label">הגעה</div>
+        <div class="value">שבת 4.7 • 22:30</div>
+      </div>
+      <div class="sum-card">
+        <span class="icon">🛫</span>
+        <div class="label">המראה</div>
+        <div class="value">רביעי 15.7 • 05:00</div>
+      </div>
+    </div>
+
+    <!-- ⚠️ Alert -->
+    <div class="tip-box warn" style="margin:0 0 24px; border-radius:10px;">
+      <span>⚠️</span>
+      <div><strong>חשוב:</strong> ב-15.7 המראה בשעה 05:00 – יקיצה בשעה 02:00 לפנות בוקר! אין פעילויות ביום 12.</div>
+    </div>
+
+    <!-- Flights / logistics -->
+    <div class="section-title">📍 לוגיסטיקה</div>
+    <div style="background:white;border-radius:12px;border:1px solid var(--border);overflow:hidden;margin-bottom:32px;">
+      <table class="info-table">
+        <tr><td style="background:var(--navy)">GPS שדה</td><td>50.0777, 19.7848 (ONE RENT)</td></tr>
+        <tr><td style="background:var(--navy)">לינה 1-2</td><td>Tadeusza Pawlikowskiego 8, Kraków (₪1,129)</td></tr>
+        <tr><td style="background:var(--forest)">לינה 3-6</td><td>Chata v korunach stromov, Bobrovník, Liptov (₪2,371)</td></tr>
+        <tr><td style="background:var(--purple)">לינה 7-10</td><td>Nový Smokovec 62, Vysoké Tatry (₪2,288)</td></tr>
+        <tr><td style="background:var(--brown)">לינה 11</td><td>plac Nowy 7, Kazimierz, Kraków (₪650)</td></tr>
+      </table>
+    </div>
+
+    <!-- 16 Attractions -->
+    <div class="section-title">⭐ 16 אטרקציות מדורגות 10/10</div>
+    <div class="attractions-grid">
+      <div class="attr-chip"><span class="star">⭐</span>🏰 בית האטרקציות קרקוב</div>
+      <div class="attr-chip"><span class="star">⭐</span>🧙 Leaky Cauldron</div>
+      <div class="attr-chip"><span class="star">⭐</span>🧗 נקיק דיירי</div>
+      <div class="attr-chip"><span class="star">⭐</span>🏎 Monaco GP קרטינג</div>
+      <div class="attr-chip"><span class="star">⭐</span>🎭 Tarzania זיפ-ליין</div>
+      <div class="attr-chip"><span class="star">⭐</span>🦋 מערת החירות</div>
+      <div class="attr-chip"><span class="star">⭐</span>🌊 אגם ורביצ'קה</div>
+      <div class="attr-chip"><span class="star">⭐</span>🏺 מכרות המלח Wieliczka</div>
+      <div class="attr-chip"><span class="star">⭐</span>🌲 Bachledka שביל צמרות</div>
+      <div class="attr-chip"><span class="star">⭐</span>🛷 TATRABOB מגלשה</div>
+      <div class="attr-chip"><span class="star">⭐</span>⛰ Prielom Hornádu</div>
+      <div class="attr-chip"><span class="star">⭐</span>❄ מערת קרח Dobšinská</div>
+      <div class="attr-chip"><span class="star">⭐</span>🌊 שביל סוחה בלה</div>
+      <div class="attr-chip"><span class="star">⭐</span>🏞 Zejmarská roklina</div>
+      <div class="attr-chip"><span class="star">⭐</span>🧗 Via Ferrata Kyseľ</div>
+      <div class="attr-chip"><span class="star">⭐</span>🎢 Energylandia</div>
+    </div>
+
+    <!-- Day overview -->
+    <div class="section-title">🗓 סקירת ימים</div>
+    <div style="background:white;border-radius:12px;border:1px solid var(--border);overflow:hidden;margin-bottom:40px;">
+      <table class="info-table" style="width:100%">
+        <tr><td style="background:var(--navy)">יום 1 – שבת 4.7</td><td>הגעה לקרקוב 22:30 • קבלת רכב</td></tr>
+        <tr><td style="background:var(--navy)">יום 2 – ראשון 5.7</td><td>🏰 בית האטרקציות ⭐ • 🧙 Leaky Cauldron ⭐ • כיכר ראשית</td></tr>
+        <tr><td style="background:var(--forest)">יום 3 – שני 6.7</td><td>🚗 קרקוב → Terchová • 🧗 נקיק דיירי ⭐</td></tr>
+        <tr><td style="background:var(--forest)">יום 4 – שלישי 7.7</td><td>🏔 אגמי רוהאץ (12km, 4 אגמי קרחון)</td></tr>
+        <tr><td style="background:var(--forest)">יום 5 – רביעי 8.7</td><td>🏎 Monaco GP ⭐ • 🦋 מערת החירות ⭐ • 🌊 ורביצ'קה ⭐</td></tr>
+        <tr><td style="background:var(--forest)">יום 6 – חמישי 9.7</td><td>🎭 Tarzania ⭐ • 🏺 מכרות מלח Wieliczka ⭐</td></tr>
+        <tr><td style="background:var(--purple)">יום 7 – שישי 10.7</td><td>🚗 טטרה נמוך → גבוה • 🌲 Bachledka שביל צמרות ⭐</td></tr>
+        <tr><td style="background:var(--purple)">יום 8 – שבת 11.7</td><td>🛷 TATRABOB ⭐ • 🌊 Štrbské Pleso</td></tr>
+        <tr><td style="background:var(--purple)">יום 9 – ראשון 12.7</td><td>⛰ Prielom Hornádu ⭐ • ❄ מערת קרח Dobšinská ⭐</td></tr>
+        <tr><td style="background:var(--purple)">יום 10 – שני 13.7</td><td>🌊 סוחה בלה ⭐ • 🏞 Zejmarská roklina ⭐</td></tr>
+        <tr><td style="background:var(--brown)">יום 11 – שלישי 14.7</td><td>🧗 Via Ferrata Kyseľ ⭐ • 🎢 Energylandia ⭐ • חזרה קרקוב</td></tr>
+        <tr><td style="background:#555">יום 12 – רביעי 15.7</td><td>⚠️ יקיצה 02:00 – טיסה 05:00. אין פעילויות!</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     DAY SECTIONS
+══════════════════════════════════════════════════════════ -->
+<div class="days-container">
+
+<!-- DAY 1 -->
+<div class="day-section" id="day1" data-region="krakow">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 1</span>
+      <span class="day-date">שבת • 4.7.26</span>
+      <span class="day-title">הגעה לקרקוב ✈️</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar">🚗 קבלת רכב – One Rent</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--orange)">שעה</td><td>22:30 – הגעה לנמל התעופה קרקוב</td></tr>
+        <tr><td style="background:var(--orange)">GPS חניון</td><td>50.0777, 19.7848 (אחרי יציאה מהטרמינל)</td></tr>
+        <tr><td style="background:var(--orange)">חברה</td><td>ONE RENT  |  ₪2,695 שולם מראש</td></tr>
+        <tr><td style="background:var(--orange)">פיקדון</td><td>3,150 PLN – מוחזר בסיום</td></tr>
+        <tr><td style="background:var(--orange)">הגעה למלון</td><td>Tadeusza Pawlikowskiego 8  |  GPS: 50.0617, 19.9449  (~20 דקות)</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>הורידו מפות אופליין לסלובקיה ב-Waze/Google Maps לפני הנסיעה</li>
+        <li>Check-in עצמאי – מפתח בקוד / lockbox</li>
+      </ul>
+      <div class="tip-box tip"><span>💡</span><div><strong>טיפ:</strong> הרכב שולם! צלמו את הרכב מכל הכיוונים לפני הנסיעה.</div></div>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🏨</span>
+      <div>
+        <div class="accom-name">Tadeusza Pawlikowskiego 8</div>
+        <div class="accom-addr">📍 Tadeusza Pawlikowskiego 8, Kraków</div>
+        <div class="accom-nights">לילות 1-2</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 2 -->
+<div class="day-section" id="day2" data-region="krakow">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 2</span>
+      <span class="day-date">ראשון • 5.7.26</span>
+      <span class="day-title">קרקוב – עיר העתיקה + אטרקציות ⭐⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar" style="background:var(--navy)">🏰 בית האטרקציות – House of Attractions ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--navy)">כתובת</td><td>ul. Grodzka 48, Kraków  |  GPS: 50.0574, 19.9370</td></tr>
+        <tr><td style="background:var(--navy)">שעות</td><td>10:00–22:00  |  מרכז בילוי מודרני</td></tr>
+        <tr><td style="background:var(--navy)">עלות</td><td>כ-PLN 40-60/אדם  |  רכשו מראש אונליין</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>מבוך מראות, מנהרת זכוכית, קולנוע 5D, מחלקת VR, גלגל שיגעון (Vortex Tunnel)</li>
+        <li>חדר אינסוף, מבוך ליזר, בית הפוך, מוזיאון פרפרים חיים – אטרקציה לכל הגיל!</li>
+        <li>נמצא בלב העיר העתיקה – קל לשלב עם טיול ברחבי</li>
+      </ul>
+    </div>
+
+    <div class="section-bar" style="background:var(--purple)">🧙 Leaky Cauldron – בית קפה הארי פוטר ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--purple)">כתובת</td><td>Grodzka 50/1, Kraków  |  GPS: 50.0570, 19.9384</td></tr>
+        <tr><td style="background:var(--purple)">שעות</td><td>10:00–22:00</td></tr>
+        <tr><td style="background:var(--purple)">עלות</td><td>~PLN 40-80 לאדם</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>בית קפה שכולו מוקדש להארי פוטר – אווירה מסתורית מהסרטים</li>
+        <li>תפריט בהשראת עולם הקוסמים: שיקויים מיוחדים, קינוחים קסומים</li>
+        <li>מרחק הליכה קצרה מהכיכר הראשית</li>
+      </ul>
+      <div class="tip-box warn"><span>🧙</span><div><strong>לחובבי הארי פוטר:</strong> זה בשבילכם – זה אוורת דיאגון אלי אמיתית.</div></div>
+    </div>
+
+    <div class="section-bar" style="background:var(--blue)">🏛 כיכר הראשית – Rynek Główny</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--blue)">GPS</td><td>50.0619, 19.9368  |  כיכר מימי הביניים, גודל 200×200 מ'</td></tr>
+        <tr><td style="background:var(--blue)">שעות</td><td>פתוח 24/7  |  1-1.5 שעות</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>הכיכר הגדולה ביותר מימי הביניים באירופה – המאה ה-13</li>
+        <li>מרכז הסחר Sukiennice – חנויות עובר ומזכרות, קולונדות גותיות</li>
+        <li>כנסיית מריה הקדושה – כל שעה חצוצרן מנגן Hejnał Mariacki מהמגדל</li>
+      </ul>
+    </div>
+
+    <div class="accom-box">
+      <span class="accom-icon">🏨</span>
+      <div>
+        <div class="accom-name">Tadeusza Pawlikowskiego 8</div>
+        <div class="accom-addr">📍 Tadeusza Pawlikowskiego 8, Kraków</div>
+        <div class="accom-nights">לילה 2/2</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 3 -->
+<div class="day-section" id="day3" data-region="low-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 3</span>
+      <span class="day-date">שני • 6.7.26</span>
+      <span class="day-title">נסיעה לסלובקיה + נקיק דיירי ⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar green">🚗 נסיעה: קרקוב → Terchová (כ-3 שעות)</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--forest)">מסלול</td><td>קרקוב → E77 → גבול → E50 → Terchová</td></tr>
+        <tr><td style="background:var(--forest)">מרחק</td><td>כ-220 ק"מ  |  ~3 שעות נסיעה</td></tr>
+        <tr><td style="background:var(--forest)">עצירה</td><td>מומלץ עצור בגבול לנוח + ממתקים סלובקים 🍫</td></tr>
+      </table>
+    </div>
+
+    <div class="section-bar green">🔥 נקיק דיירי – Jánošíkove diery ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--forest)">כתובת</td><td>Terchová, GPS: 49.2414, 19.0741</td></tr>
+        <tr><td style="background:var(--forest)">שעות</td><td>08:00–18:00  |  3-4 שעות הליכה</td></tr>
+        <tr><td style="background:var(--forest)">עלות</td><td>כ-8 EUR/אדם</td></tr>
+        <tr><td style="background:var(--forest)">קושי</td><td>בינוני – סולמות שרשרת, גשרים, מפלי מים</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>נקיק עם מפלים, גשרים וסולמות שרשרת – הרפתקה אמיתית!</li>
+        <li>קיימים 3 מסלולים: תחתי (הקל ביותר), אמצעי, עליון</li>
+        <li>קחו נעלי הליכה עם אחיזה טובה – הסלעים רטובים ומחליקים</li>
+      </ul>
+      <div class="tip-box warn"><span>⚠️</span><div><strong>חשוב:</strong> סופי שבוע – עמוס מאוד! הגיעו לפני 09:00 בבוקר.</div></div>
+      <div class="map-box">
+        <span class="map-box-icon">🗺</span>
+        <div>
+          <div class="map-box-title">מפת מסלול – Jánošíkove diery</div>
+          <div class="map-box-desc">פתחו ב-mapy.com עם מפת שטח טיולים</div>
+          <a href="https://mapy.com/turisticka?x=19.074&y=49.241&z=14" target="_blank">🗺 פתח מפה</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-bar green">🚗 נסיעה ללינה – Bobrovník</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--forest)">מסלול</td><td>Terchová → Bobrovník, Liptov (~1 שעה)</td></tr>
+      </table>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🌲</span>
+      <div>
+        <div class="accom-name">Chata v korunach stromov</div>
+        <div class="accom-addr">📍 Bobrovník, מחוז Liptov, סלובקיה</div>
+        <div class="accom-nights">לילה 1/4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 4 -->
+<div class="day-section" id="day4" data-region="low-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 4</span>
+      <span class="day-date">שלישי • 7.7.26</span>
+      <span class="day-title">אגמי רוהאץ – Western Tatras 🏔</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar green">🏔 אגמי רוהאץ – Roháčske Plesa</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--forest)">GPS</td><td>49.2282, 19.4868 (חניון Spálená)</td></tr>
+        <tr><td style="background:var(--forest)">מסלול</td><td>12 ק"מ הלוך-חזור  |  5-7 שעות</td></tr>
+        <tr><td style="background:var(--forest)">קושי</td><td>בינוני-קשה – עליה של 700 מ' גובה</td></tr>
+        <tr><td style="background:var(--forest)">מה לצפות</td><td>4 אגמי קרחון מרהיבים בשיא הטטרה המערבי</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>הצטיידו במים ואוכל ליום שלם – אין חנויות בדרך</li>
+        <li>הפסגה הראשונה: אגם Vyšné Roháčske – נוף פנורמי מדהים</li>
+        <li>ניתן לחזור באותו מסלול או לסגור לולאה (מסלול ירוק)</li>
+      </ul>
+      <div class="tip-box tip"><span>💡</span><div><strong>טיפ:</strong> צאו לא יאוחר מ-08:00 כדי לסיים לאור יום.</div></div>
+      <div class="map-box">
+        <span class="map-box-icon">🗺</span>
+        <div>
+          <div class="map-box-title">מפת מסלול – Roháčske Plesa</div>
+          <div class="map-box-desc">מסלול מלא עם 4 האגמים</div>
+          <a href="https://mapy.com/turisticka?x=19.487&y=49.228&z=13" target="_blank">🗺 פתח מפה</a>
+        </div>
+      </div>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🌲</span>
+      <div>
+        <div class="accom-name">Chata v korunach stromov</div>
+        <div class="accom-addr">📍 Bobrovník, מחוז Liptov</div>
+        <div class="accom-nights">לילה 2/4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 5 -->
+<div class="day-section" id="day5" data-region="low-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 5</span>
+      <span class="day-date">רביעי • 8.7.26</span>
+      <span class="day-title">Monaco GP + מערת חירות + ורביצ'קה ⭐⭐⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar red">🔥 מסלול קרטינג Monaco Grand Prix ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--red)">כתובת</td><td>Demänová, Liptovský Mikuláš  |  GPS: 49.0680, 19.5891</td></tr>
+        <tr><td style="background:var(--red)">שעות</td><td>10:00–18:00  |  ~1-2 שעות</td></tr>
+        <tr><td style="background:var(--red)">עלות</td><td>כ-15-25 EUR/אדם לגזרה</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>מסלול קרטינג מדמה את מסלול מונקו – רחובות צרים, סיבובים חדים!</li>
+        <li>מסלולים לגילאים שונים – גם לילדים קטנים</li>
+        <li>ניתן להזמין מראש באתר או להגיע ולחכות בתור</li>
+      </ul>
+    </div>
+
+    <div class="section-bar" style="background:var(--purple)">🔥 מערת החירות – Demänovská Cave ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--purple)">כתובת</td><td>Demänovská dolina 340  |  GPS: 49.0231, 19.5801</td></tr>
+        <tr><td style="background:var(--purple)">שעות</td><td>09:30–16:00  |  סיור מודרך ~1 שעה</td></tr>
+        <tr><td style="background:var(--purple)">עלות</td><td>כ-14 EUR/אדם מבוגר  |  קנו מראש!</td></tr>
+        <tr><td style="background:var(--purple)">לבוש</td><td>חם! בפנים 7°C – קחו ז'קט</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>המערה המבוקרת ביותר בסלובקיה – נטיפי ענק, אגמים תת-קרקעיים</li>
+        <li>הביאו מעיל חם – בפנים קר גם בקיץ</li>
+        <li>הסיורים יוצאים כל שעה – הזמינו מקום מראש באתר רשמי</li>
+      </ul>
+    </div>
+
+    <div class="section-bar" style="background:var(--blue)">🔥 אגם ורביצ'קה – Vrbické Pleso ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--blue)">GPS</td><td>49.0774, 19.5266  |  ~20 דקות מהמערה</td></tr>
+        <tr><td style="background:var(--blue)">פעילויות</td><td>שחייה, קיאקים, SUP, פיקניק</td></tr>
+        <tr><td style="background:var(--blue)">שעות</td><td>פתוח  |  1.5-2 שעות</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>אגם קרחוני מרהיב עם מים שקופים ירוקים-כחולים</li>
+        <li>ניתן לשכור קיאק, SUP או סתם לשחות ולהירגע</li>
+        <li>יש מסעדה ובית קפה על שפת האגם</li>
+      </ul>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🌲</span>
+      <div>
+        <div class="accom-name">Chata v korunach stromov</div>
+        <div class="accom-addr">📍 Bobrovník, מחוז Liptov</div>
+        <div class="accom-nights">לילה 3/4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 6 -->
+<div class="day-section" id="day6" data-region="low-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 6</span>
+      <span class="day-date">חמישי • 9.7.26</span>
+      <span class="day-title">Tarzania זיפ-ליין + מכרות מלח ⭐⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar green">🔥 פארק טרזניה + זיפ-ליין – Tarzania Hrabovo ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--forest)">כתובת</td><td>Hrabovo, Ružomberok  |  GPS: 49.0602, 19.3228</td></tr>
+        <tr><td style="background:var(--forest)">שעות</td><td>09:00–17:00  |  2-3 שעות</td></tr>
+        <tr><td style="background:var(--forest)">עלות</td><td>כ-20-40 EUR/אדם (לפי מסלול)</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>פארק הרפתקות ענקי – זיפ-ליין על פני אגם, מסלולי חבלים, טיפוס</li>
+        <li>מסלולים לגילאים שונים – מ-5 שנים ומעלה</li>
+        <li>הזיפ-ליין הראשי על פני האגם – חוויה שלא תשכחו!</li>
+      </ul>
+    </div>
+
+    <div class="section-bar" style="background:var(--navy)">🔥 מכרות המלח – Kopalnia soli Wieliczka ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--navy)">כתובת</td><td>ul. Daniłowicza 10, Wieliczka  |  GPS: 49.9836, 20.0554</td></tr>
+        <tr><td style="background:var(--navy)">שעות</td><td>09:00–17:00  |  סיור 2-2.5 שעות</td></tr>
+        <tr><td style="background:var(--navy)">עלות</td><td>כ-65-90 PLN/אדם  |  הזמינו מראש!</td></tr>
+        <tr><td style="background:var(--navy)">מיקום</td><td>20 ק"מ מקרקוב – בדרך לבית!</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>אתר UNESCO – מכרה מלח מהמאה ה-13 עם קתדרלות, פסלים וכנסיות מתחת לאדמה</li>
+        <li>כנסיית סנט קינגה – כולה חצובה במלח, שנדליות מלח מרהיבות</li>
+        <li>חובה להזמין כרטיסים מראש – נגמרים מהר בעונת הקיץ!</li>
+      </ul>
+      <div class="tip-box warn"><span>⚠️</span><div><strong>חשוב:</strong> הזמינו כרטיסים מראש ב-kopalnia.pl – נגמרים!</div></div>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🌲</span>
+      <div>
+        <div class="accom-name">Chata v korunach stromov</div>
+        <div class="accom-addr">📍 Bobrovník, מחוז Liptov</div>
+        <div class="accom-nights">לילה 4/4 – האחרון!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 7 -->
+<div class="day-section" id="day7" data-region="high-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 7</span>
+      <span class="day-date">שישי • 10.7.26</span>
+      <span class="day-title">מעבר לטטרה גבוהים + שביל צמרות ⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar" style="background:var(--blue)">🚗 נסיעה: טטרה נמוכים → טטרה גבוהים (~2 שעות)</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--blue)">מסלול</td><td>Bobrovník → Nový Smokovec  |  ~100 ק"מ</td></tr>
+        <tr><td style="background:var(--blue)">בדרך</td><td>ניתן לעצור ב-Poprad לקניות + ארוחה</td></tr>
+      </table>
+    </div>
+
+    <div class="section-bar green">🔥 שביל צמרות העצים – Bachledka Treetop Walk ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--forest)">כתובת</td><td>Bachledova dolina, Ždiar  |  GPS: 49.2927, 20.2176</td></tr>
+        <tr><td style="background:var(--forest)">שעות</td><td>09:00–17:00  |  1.5-2 שעות</td></tr>
+        <tr><td style="background:var(--forest)">עלות</td><td>כ-15-20 EUR/אדם  |  כולל רכבל</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>מסלול על גשר בגובה עצי האורן – נוף פנורמי על הטטרה הגבוהה</li>
+        <li>הגישה ברכבל קבינה – כבר החוויה מרהיבה!</li>
+        <li>מסלול קל ומתאים לכל הגילאים</li>
+      </ul>
+      <div class="map-box">
+        <span class="map-box-icon">🗺</span>
+        <div>
+          <div class="map-box-title">מפת Bachledka Treetop Walk</div>
+          <div class="map-box-desc">מסלול שביל הצמרות</div>
+          <a href="https://mapy.com/turisticka?x=20.218&y=49.293&z=14" target="_blank">🗺 פתח מפה</a>
+        </div>
+      </div>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🏔</span>
+      <div>
+        <div class="accom-name">Nový Smokovec 62</div>
+        <div class="accom-addr">📍 Nový Smokovec 62, 3rd floor, Vysoké Tatry</div>
+        <div class="accom-nights">לילה 1/4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 8 -->
+<div class="day-section" id="day8" data-region="high-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 8</span>
+      <span class="day-date">שבת • 11.7.26</span>
+      <span class="day-title">TATRABOB + אגם שטרבסקה פלסו ⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar red">🔥 מגלשת הרים TATRABOB ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--red)">כתובת</td><td>Tatranská Lomnica  |  GPS: 49.1660, 20.2849</td></tr>
+        <tr><td style="background:var(--red)">שעות</td><td>09:00–17:00</td></tr>
+        <tr><td style="background:var(--red)">עלות</td><td>כ-12-18 EUR לנסיעה</td></tr>
+        <tr><td style="background:var(--red)">קושי</td><td>קל – מתאים לכולם מגיל 3</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>מגלשת הרים על מסילה – יורדים בקצב שאתם קובעים!</li>
+        <li>הגישה ברכבל – נוף מדהים על עמק הטטרה</li>
+        <li>ניתן לרכב כמה פעמים – כיף לכל הגילאים</li>
+      </ul>
+    </div>
+
+    <div class="section-bar" style="background:var(--purple)">🌊 אגם שטרבסקה פלסו – Štrbské Pleso</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--purple)">GPS</td><td>49.1222, 20.0601</td></tr>
+        <tr><td style="background:var(--purple)">פעילויות</td><td>הליכה סביב האגם (4km), מסעדות, נוף</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>אגם קרחוני גבוה בטטרה – השתקפות פסגות בתוך המים</li>
+        <li>הליכה נוחה מסביב לאגם (45 דקות) – נוף מרהיב</li>
+        <li>ניתן לרכב ברכבל מהאגם לפסגת Solisko</li>
+      </ul>
+      <div class="map-box">
+        <span class="map-box-icon">🗺</span>
+        <div>
+          <div class="map-box-title">מפת Štrbské Pleso</div>
+          <div class="map-box-desc">מסלול סביב האגם ולפסגות</div>
+          <a href="https://mapy.com/turisticka?x=20.060&y=49.122&z=13" target="_blank">🗺 פתח מפה</a>
+        </div>
+      </div>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🏔</span>
+      <div>
+        <div class="accom-name">Nový Smokovec 62</div>
+        <div class="accom-addr">📍 Nový Smokovec 62, Vysoké Tatry</div>
+        <div class="accom-nights">לילה 2/4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 9 -->
+<div class="day-section" id="day9" data-region="high-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 9</span>
+      <span class="day-date">ראשון • 12.7.26</span>
+      <span class="day-title">Prielom Hornádu + מערת קרח ⭐⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar red">🔥 פריאלום הורנדו – Prielom Hornádu ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--red)">GPS</td><td>48.9260, 20.4080 (חניון Podlesok)</td></tr>
+        <tr><td style="background:var(--red)">מסלול</td><td>16 ק"מ הלוך-חזור  |  4-5 שעות</td></tr>
+        <tr><td style="background:var(--red)">סוג</td><td>מסלול חד-כיווני (עלייה בלבד!) – צאו מוקדם!</td></tr>
+        <tr><td style="background:var(--red)">תקופה</td><td>פתוח 1.6 – 31.10 בלבד</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>נקיק נהר מרהיב – הליכה לאורך הנהר עם גשרים, מדרגות וצוקים</li>
+        <li>מסלול חד-כיווני – עולים רק מצד אחד, חוזרים בדרך אחרת</li>
+        <li>מים שקופים ירוקים – אחד הנופים היפים בסלובקיה</li>
+      </ul>
+      <div class="tip-box warn"><span>⚠️</span><div><strong>חשוב:</strong> מסלולים חד-כיווניים – הגיעו לפני 08:00 בעונה!</div></div>
+      <div class="map-box">
+        <span class="map-box-icon">🗺</span>
+        <div>
+          <div class="map-box-title">מפת Prielom Hornádu</div>
+          <div class="map-box-desc">נקיק נהר – Slovak Paradise</div>
+          <a href="https://mapy.com/turisticka?x=20.408&y=48.926&z=13" target="_blank">🗺 פתח מפה</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-bar" style="background:var(--purple)">🔥 מערת הקרח דובשינסקה – Dobšinská ❄ ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--purple)">GPS</td><td>48.7739, 20.2744</td></tr>
+        <tr><td style="background:var(--purple)">שעות</td><td>09:00–16:00  |  סיור ~30 דקות</td></tr>
+        <tr><td style="background:var(--purple)">כניסה</td><td>מזומן בלבד!  |  -3°C בפנים</td></tr>
+        <tr><td style="background:var(--purple)">סגירה</td><td>⚠️ סגורה בשני! – יום 12 הוא ראשון ✓</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>אחת ממערות הקרח הגדולות בעולם – כיפות קרח עצומות, קרחונים, פסלי קרח</li>
+        <li>קחו מעיל חם מאוד – -3 מעלות בפנים גם בקיץ</li>
+        <li>קנו כרטיסים במזומן בכניסה – אין כרטיסים אונליין</li>
+      </ul>
+      <div class="tip-box warn"><span>⚠️</span><div><strong>חשוב מאוד:</strong> המערה <strong>סגורה בימי שני!</strong> – יום 12 הוא ראשון 12.7 ✅</div></div>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🏔</span>
+      <div>
+        <div class="accom-name">Nový Smokovec 62</div>
+        <div class="accom-addr">📍 Nový Smokovec 62, Vysoké Tatry</div>
+        <div class="accom-nights">לילה 3/4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 10 -->
+<div class="day-section" id="day10" data-region="high-tat">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 10</span>
+      <span class="day-date">שני • 13.7.26</span>
+      <span class="day-title">סוחה בלה + זיימרסקה רוקלינה ⭐⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar red">🔥 שביל סוחה בלה – Suchá Belá ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--red)">GPS</td><td>48.9340, 20.4200 (חניון Podlesok)</td></tr>
+        <tr><td style="background:var(--red)">מסלול</td><td>7 ק"מ  |  3-4 שעות  |  חד-כיווני</td></tr>
+        <tr><td style="background:var(--red)">קושי</td><td>בינוני – סולמות שרשרת, גשרי עץ</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>הנקיק הכי פופולרי ב-Slovak Paradise – מדוע? כי הוא מדהים!</li>
+        <li>סולמות שרשרת, גשרי עץ מעל מפלים – הרפתקה אמיתית</li>
+        <li>הגיעו לפני 08:00 – בעונה עמוס מאוד</li>
+      </ul>
+      <div class="map-box">
+        <span class="map-box-icon">🗺</span>
+        <div>
+          <div class="map-box-title">מפת Suchá Belá</div>
+          <div class="map-box-desc">Slovak Paradise – נקיק הרים</div>
+          <a href="https://mapy.com/turisticka?x=20.420&y=48.934&z=13" target="_blank">🗺 פתח מפה</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-bar orange">🏞 מסלול זיימרסקה – Zejmarská roklina ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--orange)">מסלול</td><td>6 ק"מ  |  2-3 שעות  |  חד-כיווני</td></tr>
+        <tr><td style="background:var(--orange)">קושי</td><td>בינוני</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>נקיק עם מפלים ובריכות טבעיות – ניתן לטבול!</li>
+        <li>שילוב מושלם עם סוחה בלה – שני נקיקים ביום אחד</li>
+      </ul>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🏔</span>
+      <div>
+        <div class="accom-name">Nový Smokovec 62</div>
+        <div class="accom-addr">📍 Nový Smokovec 62, Vysoké Tatry</div>
+        <div class="accom-nights">לילה 4/4 – האחרון!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 11 -->
+<div class="day-section" id="day11" data-region="paradise">
+  <div class="day-header">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 11</span>
+      <span class="day-date">שלישי • 14.7.26</span>
+      <span class="day-title">Via Ferrata + Energylandia + חזרה קרקוב ⭐⭐</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="section-bar red">🔥 Via Ferrata HZS Kyseľ ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--red)">GPS</td><td>אזור Slovak Paradise</td></tr>
+        <tr><td style="background:var(--red)">שעות</td><td>פתוח 15.6 – 31.10 בלבד</td></tr>
+        <tr><td style="background:var(--red)">ציוד</td><td>השכרת ציוד במקום – אנקור + קסדה</td></tr>
+        <tr><td style="background:var(--red)">קושי</td><td>בינוני-קשה – חוויה ייחודית!</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>Via Ferrata = "דרך הברזל" – טיפוס סלע עם ווים וסולמות מוחברים לצוק</li>
+        <li>שוכרים ציוד (אנקור + קסדה) בכניסה – אין צורך בניסיון קודם</li>
+        <li>חוויה שלא תשכחו – לא הייתם על זה לפני כן!</li>
+      </ul>
+    </div>
+
+    <div class="section-bar orange">🔥 פארק אנרג'ילנדיה – Energylandia ⭐ ציון 10</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--orange)">כתובת</td><td>Zator, Małopolska  |  GPS: 49.9880, 19.4483</td></tr>
+        <tr><td style="background:var(--orange)">שעות</td><td>10:00–20:00  |  3-4 שעות</td></tr>
+        <tr><td style="background:var(--orange)">עלות</td><td>כ-200-250 PLN/אדם  |  הזמינו מראש!</td></tr>
+        <tr><td style="background:var(--orange)">מיקום</td><td>בדרך לקרקוב – בדיוק על המסלול!</td></tr>
+      </table>
+      <ul class="bullets">
+        <li>פארק שעשועים גדול בפולין – רכבות הרים, מתקני מים, אטרקציות לכל הגילאים</li>
+        <li>Magic Night ב-14.7 – לילה קסום בפארק! (אם לא עייפים מהיום)</li>
+        <li>ממוקם בדרך לקרקוב – נוח מאוד לשילוב</li>
+      </ul>
+      <div class="tip-box warn"><span>⚠️</span><div><strong>זכרו:</strong> מחר טיסה ב-05:00! הלכו לישון מוקדם – תתנגדו לפיתוי Magic Night 😴</div></div>
+    </div>
+
+    <div class="section-bar" style="background:var(--navy)">🚗 נסיעה חזרה לקרקוב – Kazimierz</div>
+    <div class="act-block">
+      <table class="info-table">
+        <tr><td style="background:var(--navy)">מסלול</td><td>Energylandia → Kazimierz, Kraków (~1 שעה)</td></tr>
+        <tr><td style="background:var(--navy)">לינה</td><td>plac Nowy 7, Kazimierz</td></tr>
+      </table>
+    </div>
+    <div class="accom-box">
+      <span class="accom-icon">🏨</span>
+      <div>
+        <div class="accom-name">plac Nowy 7 – Kazimierz</div>
+        <div class="accom-addr">📍 plac Nowy 7, Kraków, 31-056</div>
+        <div class="accom-nights">לילה אחרון – ₪650</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 12 -->
+<div class="day-section" id="day12" data-region="krakow">
+  <div class="day-header" style="background:#333;">
+    <div class="day-header-gold-strip"></div>
+    <div class="day-header-content">
+      <span class="day-num">יום 12</span>
+      <span class="day-date">רביעי • 15.7.26</span>
+      <span class="day-title">⚠️ יום עזיבה – אין פעילויות!</span>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="tip-box warn" style="margin:20px; border-radius:10px; font-size:16px;">
+      <span style="font-size:28px;">⚠️</span>
+      <div>
+        <strong>יקיצה בשעה 02:00 לפנות בוקר!</strong><br>
+        טיסה ב-05:00. אין שום פעילויות ביום הזה.<br>
+        לכו לישון מוקדם בלילה שלפני! 😴
+      </div>
+    </div>
+    <div style="padding:16px 20px;">
+      <table class="info-table">
+        <tr><td style="background:#555">יקיצה</td><td>02:00 לפנות בוקר</td></tr>
+        <tr><td style="background:#555">יציאה</td><td>02:30 לנמל התעופה</td></tr>
+        <tr><td style="background:#555">טיסה</td><td>05:00 – קרקוב ✈️ ישראל</td></tr>
+        <tr><td style="background:#555">GPS שדה</td><td>50.0777, 19.7848</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div><!-- .days-container -->
+
+<footer>
+  <div>🇵🇱 פולין וסלובקיה יולי 2026 🇸🇰</div>
+  <div style="margin-top:6px">מפות: <span>mapy.com</span> | נוצר ב-<span>Claude</span></div>
+</footer>
+
+<script>
+function showSection(id) {
+  // Hide all
+  document.querySelectorAll('.day-section, .summary-section').forEach(el => {
+    el.classList.remove('visible');
+  });
+  // Show target
+  const target = document.getElementById(id);
+  if (target) target.classList.add('visible');
+  // Update nav
+  document.querySelectorAll('.nav-btn').forEach((btn, i) => {
+    btn.classList.remove('active');
+  });
+  // Find and activate correct button
+  event.target.classList.add('active');
+  // Scroll to top smoothly
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
